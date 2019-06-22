@@ -1,15 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja - Trufi Association" version="0.1" shortdescription="Trufi Association" description="For mapping trufi public transport in Bolivia">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja - Trufi Association" version="1.0" link="https://github.com/trufi-app" shortdescription="Trufi Association" description="One click presets for the new Public Transport in Bolivia">
+    <group name="Trufi Association" icon="presets/transport/bus_old.svg">
+        <item name="Bus Stop Position" type="node">
+            <label text="Stop Position"/>
+            <label text=""/>
 
+            <key key="public_transport" value="station"/>
+            <key key="amenity" value="bus_station"/>
+            <key key="bus" value="yes"/>
+            <text key="name" text="Name of the stop" default="" delete_if_empty="true"/>
+        </item>
+        <item name="Bus Stop Position" type="node" icon="presets/transport/bus_old.svg">
+            <label text="Stop Position"/>
+            <label text=""/>
 
-	<item name="stop_position" type="node">
-		<label text="Stop Position"/>
-		<label text=""/>
-		
-		<key key="public_transport" value="station"/>
-		<key key="amenity" value="bus_station"/>
-		<key key="bus" value="yes"/>
-		<text key="name" text="Name of the stop" default="" delete_if_empty="true"/>	
-	</item>
+            <key key="public_transport" value="station"/>
+            <key key="amenity" value="bus_station"/>
+            <key key="bus" value="yes"/>
+            <text key="name" text="Name of the stop" default="" delete_if_empty="true"/>
+        </item>
+        <item name="Bus Stop Position test two" type="node" icon="https://www.trufi.app/wp-content/uploads/2019/02/48.png">
+            <label text="Stop Position"/>
+            <label text=""/>
 
+            <key key="public_transport" value="station"/>
+            <key key="amenity" value="bus_station"/>
+            <key key="bus" value="yes"/>
+            <text key="name" text="Name of the stop" default="" delete_if_empty="true"/>
+        </item>
+
+    </group>
 </presets>
