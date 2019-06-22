@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja - Trufi Association" version="0.1" shortdescription="Trufi Association" description="For mapping trufi public transport in Bolivia">
+
+
+	<item name="stop_position" type="node">
+		<label text="Stop Position"/>
+		<label text=""/>
+		
+		<key key="public_transport" value="station"/>
+		<key key="amenity" value="bus_station"/>
+		<key key="bus" value="yes"/>
+		<text key="name" text="Name of the stop" default="" delete_if_empty="true"/>	
+	</item>
+
+</presets>
