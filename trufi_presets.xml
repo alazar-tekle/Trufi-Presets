@@ -8,5 +8,21 @@
             <key key="bus" value="yes"/>
             <text key="name" text="Stop name" default="" delete_if_empty="true"/>
         </item>
+        <item name="Bus Route" type="relation" icon="presets/transport/way/path.svg">
+            <label text="Bus Route"/>
+            <label text=""/>
+            <key key="public_transport:version" value="2"/>
+            <key key="type" value="route"/>
+            <key key="route" value="bus"/>
+
+            <text key="name" text="Stop name" default="" delete_if_empty="true"/>
+            <text key="from" text="From" default="" delete_if_empty="true"/>
+            <text key="to" text="To" default="" delete_if_empty="true"/>
+            <text key="operator" text="Operator" default="" delete_if_empty="true"/>
+            <text key="ref" text="ref" default="" delete_if_empty="true"/>
+
+            <combo key="wheelchair" text="Wheelchair" values="no, yes" default="no"/>
+            <combo key="on_demand" text="On demand" values="no, yes" default="yes"/>
+        </item>
     </group>
 </presets>
