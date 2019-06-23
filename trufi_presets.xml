@@ -21,8 +21,8 @@
             <text key="ref" text="ref" default="" delete_if_empty="true"/>
             <label text=""/>
             <combo key="route" text="Route type" values="bus,share_taxi" default="bus"/>
-            <combo key="wheelchair (no)" text="Wheelchair" values="no,yes" default="no" delete_if_empty="true"/>
-            <combo key="on_demand (yes)" text="On demand" values="no,yes" default="yes" delete_if_empty="true"/>
+            <combo key="wheelchair" text="Wheelchair (no)" values="no,yes" default="no" delete_if_empty="true"/>
+            <combo key="on_demand" text="On demand (yes)" values="no,yes" default="yes" delete_if_empty="true"/>
         </item>
         <item name="Master Route" type="relation" icon="presets/barrier/entrance.svg">
             <label text="Master Route"/>
