@@ -1,7 +1,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja - Trufi Association" version="1.0" link="https://github.com/trufi-app" shortdescription="Trufi Association" description="One click presets for the new Public Transport in Bolivia">
     <group name="Trufi Association" icon="https://www.trufi.app/wp-content/uploads/2019/02/48.png">
-        <item name="Stop Position" type="node" icon="presets/transport/bus_old.svg">
-            <label text="Stop Position"/>
+        <item name="Stop Initial" type="node" icon="presets/transport/bus_old.svg">
+            <label text="Stop Initial"/>
             <label text=""/>
             <key key="public_transport" value="station"/>
             <key key="amenity" value="bus_station"/>
@@ -13,16 +13,27 @@
             <label text=""/>
             <key key="public_transport:version" value="2"/>
             <key key="type" value="route"/>
-            <key key="route" value="bus"/>
 
-            <text key="name" text="Stop name" default="" delete_if_empty="true"/>
+            <text key="name" text="Route name" default="" delete_if_empty="true"/>
             <text key="from" text="From" default="" delete_if_empty="true"/>
             <text key="to" text="To" default="" delete_if_empty="true"/>
             <text key="operator" text="Operator" default="" delete_if_empty="true"/>
             <text key="ref" text="ref" default="" delete_if_empty="true"/>
-
-            <combo key="wheelchair" text="Wheelchair" values="no, yes" default="no"/>
-            <combo key="on_demand" text="On demand" values="no, yes" default="yes"/>
+            <label text=""/>
+            <combo key="route" text="Route type" values="bus,share_taxi" default="bus"/>
+            <combo key="wheelchair (no)" text="Wheelchair" values="no,yes" default="no" delete_if_empty="true"/>
+            <combo key="on_demand (yes)" text="On demand" values="no,yes" default="yes" delete_if_empty="true"/>
+        </item>
+        <item name="Master Route" type="relation" icon="presets/barrier/entrance.svg">
+            <label text="Master Route"/>
+            <label text=""/>
+            <key key="public_transport:version" value="2"/>
+            <key key="type" value="route_master"/>
+            
+            <text key="name" text="Master route name" default="" delete_if_empty="true"/>
+            <text key="operator" text="Operator" default="" delete_if_empty="true"/>
+            <text key="ref" text="ref" default="" delete_if_empty="true"/>
+            <combo key="route_master" text="route" values="bus,share_taxi" default="bus"/>
         </item>
     </group>
 </presets>
