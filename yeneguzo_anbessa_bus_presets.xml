@@ -3,10 +3,9 @@
         <item name="Stop Initial" type="node" icon="presets/transport/bus_old.svg">
             <label text="Stop Initial"/>
             <label text=""/>
-            <key key="public_transport" value="station"/>
-            <key key="amenity" value="bus_station"/>
+            <key key="public_transport" value="stop_position"/>
             <key key="bus" value="yes"/>
-            <text key="name" text="Stop name" default="" delete_if_empty="true"/>
+            <text key="name" text="Stop name" default="Bus Stop" delete_if_empty="true"/>
         </item>
         <item name="Bus Route" type="relation" icon="presets/transport/way/path.svg">
             <label text="Bus Route"/>
@@ -17,12 +16,13 @@
             <text key="name" text="Route name" default="" delete_if_empty="true"/>
             <text key="from" text="From" default="" delete_if_empty="true"/>
             <text key="to" text="To" default="" delete_if_empty="true"/>
-            <text key="operator" text="Operator" default="" delete_if_empty="true"/>
+            <text key="operator" text="Operator" default="Anbessa and Sheger City Bus" delete_if_empty="true"/>
             <text key="ref" text="ref" default="" delete_if_empty="true"/>
+            <text key="colour" text="Highlighing colour" default="#E25725" delete_if_empty="true"/>
             <label text=""/>
             <combo key="route" text="Route type" values="bus,share_taxi" default="bus"/>
             <combo key="wheelchair" text="Wheelchair (no)" values="no,yes" default="no" delete_if_empty="true"/>
-            <combo key="on_demand" text="On demand (yes)" values="no,yes" default="yes" delete_if_empty="true"/>
+            <combo key="on_demand" text="On demand (yes)" values="no,yes" default="no" delete_if_empty="true"/>
         </item>
         <item name="Master Route" type="relation" icon="presets/barrier/entrance.svg">
             <label text="Master Route"/>
@@ -30,9 +30,12 @@
             <key key="public_transport:version" value="2"/>
             <key key="type" value="route_master"/>
             
-            <text key="name" text="Master route name" default="" delete_if_empty="true"/>
-            <text key="operator" text="Operator" default="" delete_if_empty="true"/>
-            <text key="ref" text="ref" default="" delete_if_empty="true"/>
+            <text key="name" text="Master route name" default="Bus 1 Sheger" delete_if_empty="true"/>
+            <text key="operator" text="Operator" default="Anbessa and Sheger City Bus" delete_if_empty="true"/>
+            <text key="network" text="Network" default="Addis Ababa Public Transport" delete_if_empty="true"/>
+            <text key="ref" text="ref" default="Complete Round Trips" delete_if_empty="true"/>
+            <text key="colour" text="Highlighing colour" default="#E25725" delete_if_empty="true"/>
+            <text key="opening_hours" text="Opening Hours" default="06:00:00" delete_if_empty="true"/>
             <combo key="route_master" text="route" values="bus,share_taxi" default="bus"/>
         </item>
     </group>
