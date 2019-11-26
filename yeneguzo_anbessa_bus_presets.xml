@@ -1,5 +1,5 @@
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja - Trufi Association" version="1.0" link="https://github.com/trufi-app" shortdescription="Trufi Association" description="One click presets for the new Public Transport in Bolivia">
-    <group name="Trufi Association" icon="https://www.trufi.app/wp-content/uploads/2019/02/48.png">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" author="Samuel Rioja + Alazar Tekle (Trufi and YeneGuzo)" version="1.0" link="https://github.com/alazar-tekle" shortdescription="YeneGuzo App" description="One click presets for the new Public Transport in Addis Ababa">
+    <group name="YeneGuzo App" icon="https://lh3.googleusercontent.com/IQ3gn51G9ewDEb3gxo1s74X1Cz4gy0T2MPGg-EYUr4Deud9ZkyCtXJPbClrTJnbnyOhoOQ=s85">
         <item name="Stop Initial" type="node" icon="presets/transport/bus_old.svg">
             <label text="Stop Initial"/>
             <label text=""/>
